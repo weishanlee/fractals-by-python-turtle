@@ -22,7 +22,7 @@ def koch_simpler(t, order, size):
         t.forward(size)
     else:
         for angle in [60, -120, 60, 0]:
-            kock_simpler(t, order-1, size/3)
+            koch_simpler(t, order-1, size/3)
             t.left(angle)
 
 # create a Turtle object called k
